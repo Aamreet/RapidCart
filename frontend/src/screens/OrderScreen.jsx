@@ -65,6 +65,7 @@ const OrderScreen = () => {
         refetch();
         toast.success('Order is paid');
       } catch (err) {
+        console.log("jhuiiii ... ");
         toast.error(err?.data?.message || err.error);
       }
     });
